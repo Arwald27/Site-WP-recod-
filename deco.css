@@ -60,6 +60,7 @@ body{
     align-content: center;
 border-radius: 10px;
 width: 50%;
+margin-top: 2%;
 }
 .title{
     text-align: center;
@@ -92,7 +93,11 @@ width: 50%;
 }
 
 
-    
+.CV{
+    display: grid;
+    grid-template-columns: auto(3, 1fr);
+    grid-template-rows: auto(12, 1fr);
+}  
 
 
 #quoi > img{
@@ -125,7 +130,6 @@ width: 50%;
 
 .photo{
     width: 934px;
-    transform: rotate(90deg);
     justify-self: center;
     align-self: center;
 }
@@ -211,7 +215,12 @@ width: 50%;
         }
       #insitu{
           align-content: center;
-          border-radius: 5px;
+          margin: auto;
+
+      }
+      #insitu > img{
+          border-radius: 25%;
+          margin-top: 2%;
       }
         
         #qui{
@@ -224,29 +233,32 @@ width: 50%;
         
         }
         
-        .afrique {
+        .afrique{
             width: 500px;
+            border-radius: 70%;
         }
-        
+         .afrique > img{
+             border-radius: 70%;
+         }
         .sthetoscope{
             width: 500px;
+            border-radius: 70%;
         }
         
+        .sthetoscope > img{
+            border-radius: 25%;
+        }
+
         .profil{
             width: 100%;
+            border-radius: 70%;
         }
         
+        .profil > img{
+            border-radius: 25%;
+
+        }
         
-        #quoi{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas: "gauche droitetop"
-                                 "gauche droitebot";
-            width: 100%;
-            color: white;
-            font-family: 'Bree Serif', serif;
-            font-size: x-large;
             
         }
          #gauche{
