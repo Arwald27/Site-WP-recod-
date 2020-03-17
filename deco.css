@@ -260,19 +260,28 @@ margin-top: 2%;
         }
         
         .CV{
+        color: white;
             display: grid;
-            grid-template-columns: auto(3, 1fr);
-            grid-template-rows: auto(12, 1fr);    
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(12, 50px);    
         }
-         #gauche{
-       grid-area: gauche;
-    }
-         #droitetop{
-        grid-area: droitetop;
-    }
-         #droitebot{
-        grid-area: droitebot;
-    }
+ 
+        .dates{
+            grid-column: 1;
+            grid-row: auto;
+        }
+
+        .icocv{
+            grid-column: 2;
+            grid-row: auto;
+            max-width: 40px;
+        }
+
+        .xp{
+            grid-column: 3;
+            grid-row: auto;
+        }
+
         .photo{
             width: 100%;
             
