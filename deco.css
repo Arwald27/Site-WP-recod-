@@ -7,6 +7,10 @@ body{
     
 
 }
+
+body > p{
+    color: white;
+}
 #bandeau{
     color: white;;
     font-size: 600%;
@@ -93,11 +97,7 @@ margin-top: 2%;
 }
 
 
-.CV{
-    display: grid;
-    grid-template-columns: auto(3, 1fr);
-    grid-template-rows: auto(12, 1fr);
-}  
+ 
 
 
 #quoi > img{
@@ -259,7 +259,10 @@ margin-top: 2%;
 
         }
         
-            
+        .CV{
+            display: grid;
+            grid-template-columns: auto(3, 1fr);
+            grid-template-rows: auto(12, 1fr);    
         }
          #gauche{
        grid-area: gauche;
