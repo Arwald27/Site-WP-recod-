@@ -1,8 +1,4 @@
-body{
-    background-color: black;
-    padding: 15px;
-    background-image: url(header.jpg);
-    background-repeat: no-repeat;
+
 
     
 
@@ -328,5 +324,192 @@ margin-top: 2%;
         }
     .concert{
         width: 860px;
+    }
+}
+
+
+
+
+
+/** Base */
+
+/** Typographie */
+body {
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: ivory;
+
+}
+
+/* Media */
+img {
+    max-width: 100%;
+    
+}
+
+#insitu,
+#afrique,
+#stétho,
+#concert,
+#Ori,
+#cosmos{
+    border-radius: 50%;
+}
+
+iframe{
+    max-width: 100%;
+}
+
+/** Layout */
+.container,
+.grid {
+    max-width: 1200px;
+    margin: auto;
+}
+.grid {
+    display: grid;
+}
+.section {
+    padding: 4em 0;
+}
+
+/** Block */
+.heading {
+    color: white;
+    text-align:center;
+    font-size: 120%;
+}
+.heading__title {
+    color: white;
+    text-shadow: blue 2px 2px 2px;
+    font-size: 600%;
+    text-transform: uppercase;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.resume__item {
+    list-style: none;
+    display: grid;
+}
+
+.resume__date {
+    margin-top: 2em;
+    text-align: right;
+}
+
+.resume__icon {
+    position: relative;
+}
+
+.resume__content {
+    margin-bottom: 4em
+}
+
+.resume__item:not(:last-child) .resume__icon:after {
+
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+    height: 100%;
+    width: 1px;
+    border-left: 1px dashed #666;
+}
+
+/** Pages */
+.section-about,
+.section-hobby,
+.section-contact {
+    color:#fff;
+    font-size: 150%;
+    font-family: 'Bree', Serif;
+}
+
+.section-resume{
+    color: white;
+    font-size: 130%;
+    font font-family: 'Orbitron', sans-serif;
+}
+
+
+.section-hobby .section__image{
+    order: initial;
+    
+}
+
+
+
+.section-hobby .section__vid{
+    order: initial;
+}
+
+.section-hobby .grid{
+    align-items: center;
+    justify-items: center;
+}
+.section-about .grid {
+    align-items: center;
+}
+.section-about .section__image {
+    order:initial;
+}
+
+@media screen and (min-width: 940px){
+
+    .heading{
+        padding: 20px;
+    }
+
+    .heading__description{
+        font-size: 150%;
+    }
+
+    .section-about .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        padding: 10px;
+    }
+    .section-about .section__image {
+        order: initial;
+    }
+
+    .section-hobby .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        padding: 10px;
+    }
+    
+    .section-contact .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .resume__item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .resume__icon {
+        justify-self: center;
+        max-width: 80px;
+    }
+
+    .resume__title{
+        color:lightseagreen;
+    }
+
+    .resume__date{
+        color: lightskyblue;
+        font-size: 150%;
     }
 }
