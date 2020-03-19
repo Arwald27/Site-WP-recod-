@@ -1,11 +1,12 @@
 
+body{
+    background-color: black;
+    padding: 15px;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
 
     
 
-}
-
-body > p{
-    color: white;
 }
 #bandeau{
     color: white;;
@@ -50,18 +51,6 @@ body > p{
     width: 120%;
 }
 
-#prologue{
-    text-align: center;
-    color: white;
-    font-family: 'Orbitron', sans-serif; 
-    
-}
-#insitu{
-    align-content: center;
-border-radius: 10px;
-width: 50%;
-margin-top: 2%;
-}
 .title{
     text-align: center;
     color: white;
@@ -92,8 +81,6 @@ margin-top: 2%;
     font-family: 'Bree Serif', serif;
 }
 
-
- 
 
 
 #quoi > img{
@@ -126,6 +113,7 @@ margin-top: 2%;
 
 .photo{
     width: 934px;
+    transform: rotate(90deg);
     justify-self: center;
     align-self: center;
 }
@@ -209,15 +197,7 @@ margin-top: 2%;
             
             
         }
-      #insitu{
-          align-content: center;
-          margin: auto;
-
-      }
-      #insitu > img{
-          border-radius: 25%;
-          margin-top: 2%;
-      }
+      
         
         #qui{
         display: grid;
@@ -229,55 +209,40 @@ margin-top: 2%;
         
         }
         
-        .afrique{
+        .afrique {
             width: 500px;
-            border-radius: 70%;
         }
-         .afrique > img{
-             border-radius: 70%;
-         }
+        
         .sthetoscope{
             width: 500px;
-            border-radius: 70%;
         }
         
-        .sthetoscope > img{
-            border-radius: 25%;
-        }
-
         .profil{
             width: 100%;
-            border-radius: 70%;
         }
         
-        .profil > img{
-            border-radius: 25%;
-
-        }
         
-        .CV{
-        color: white;
+        #quoi{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(12, 50px);    
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "gauche droitetop"
+                                 "gauche droitebot";
+            width: 100%;
+            color: white;
+            font-family: 'Bree Serif', serif;
+            font-size: x-large;
+            
         }
- 
-        .dates{
-            grid-column: 1;
-            grid-row: auto;
-        }
-
-        .icocv{
-            grid-column: 2;
-            grid-row: auto;
-            max-width: 40px;
-        }
-
-        .xp{
-            grid-column: 3;
-            grid-row: auto;
-        }
-
+         #gauche{
+       grid-area: gauche;
+    }
+         #droitetop{
+        grid-area: droitetop;
+    }
+         #droitebot{
+        grid-area: droitebot;
+    }
         .photo{
             width: 100%;
             
@@ -329,8 +294,6 @@ margin-top: 2%;
 
 
 
-
-
 /** Base */
 
 /** Typographie */
@@ -374,7 +337,7 @@ iframe{
     margin: auto;
 }
 .grid {
-    display: grid;
+    display: block;
 }
 .section {
     padding: 4em 0;
@@ -466,7 +429,21 @@ iframe{
     order:initial;
 }
 
+#contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#about{
+    display: block;
+}
+
 @media screen and (min-width: 940px){
+
+    .grid{
+        display: grid;
+    }
 
     .heading{
         padding: 20px;
