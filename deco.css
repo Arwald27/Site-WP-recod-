@@ -435,7 +435,7 @@ iframe{
 }
 
 #about{
-    display: block;
+    display: flex;
 }
 
 @media screen and (min-width: 940px){
