@@ -458,6 +458,10 @@ iframe{
     margin: 3em;
 }
 
+.page__footer{
+    color: white;
+}
+
 @media screen and (min-width: 940px){
 
     .grid{
@@ -507,5 +511,10 @@ iframe{
     .resume__date{
         color: lightskyblue;
         font-size: 150%;
+    }
+
+    .page__footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
