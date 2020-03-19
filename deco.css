@@ -438,6 +438,12 @@ iframe{
     display: flex;
 }
 
+#insitu{
+    transform: rotate(90deg);
+    max-width: 40%;
+    margin: 2em;
+}
+
 @media screen and (min-width: 940px){
 
     .grid{
