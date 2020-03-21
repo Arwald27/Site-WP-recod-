@@ -1,0 +1,197 @@
+
+
+
+/** Base */
+
+
+
+
+
+
+
+
+
+/** Layout */
+
+body{
+    display: block;
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.section__image{
+    display: block;
+
+}
+
+
+
+
+
+
+
+
+/** Block */
+
+.section{
+    padding: 4em 0;
+}
+
+.icones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    max-width: 100%;
+    gap: 60px;
+}
+
+header{
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.resume__item {
+    list-style: none;
+    display: grid;
+}
+
+.resume__date {
+    margin-top: 2em;
+    text-align: right;
+}
+
+.resume__icon {
+    position: relative;
+}
+
+.resume__content {
+    margin-bottom: 4em;
+    color: #fff;
+}
+
+.resume__item:not(:last-child) .resume__icon:after {
+
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+    height: 100%;
+    width: 1px;
+    border-left: 1px dashed #666;
+}
+
+
+.resume__item {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.resume__icon {
+    justify-self: center;
+    max-width: 80px;
+}
+
+.resume__title{
+    color:lightseagreen;
+}
+
+.resume__date{
+    color: lightskyblue;
+    font-size: 150%;
+}
+
+.section-hobby{
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
+
+.section-contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    align-items: center;
+    justify-items: center;
+    width
+}
+
+
+/** Pages */
+
+.section-about,
+.section-hobby,
+.section-contact {
+    color:#fff;
+    font-size: 150%;
+    font-family: 'Bree', Serif;
+}
+
+
+
+
+@media screen and (min-width: 1280px){
+    .grid{
+        display: grid;
+        justify-items: center;
+    }
+
+    .heading{
+        padding: 20px;
+    }
+
+    .heading__description{
+        font-size: 150%;
+    }
+
+    .section-about .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        padding: 10px;
+    }
+    .section-about .section__image {
+        order: initial;
+    }
+
+    .section-hobby .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        padding: 10px;
+    }
+    
+    .section-contact .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .resume__item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .resume__icon {
+        justify-self: center;
+        max-width: 80px;
+    }
+
+    .resume__title{
+        color:lightseagreen;
+    }
+
+    .resume__date{
+        color: lightskyblue;
+        font-size: 150%;
+    }
+
+    .page__footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+

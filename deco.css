@@ -1,330 +1,12 @@
-
-body{
-    background-color: black;
-    padding: 15px;
-    
-    
-
-    
-
-}
-#bandeau{
-    background-image: url('header.jpg');
-    background-repeat: no-repeat;
-    
-    font-size: 600%;
-    text-shadow:blue 2px 2px 2px;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
+/** Media */
 
 .page__header{
-    background-image: url('/images/header.jpg');
+    background-image: url('header.jpg');
     background-repeat: no-repeat;
-    margin-top: -8%;
-    width: 110%;
-    margin-left: -8%;
 }
 
-.slogan{
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    font-size: larger;
-}
-
-
-.icones{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: center;
-    justify-content: center;
-    gap: 60px;
-    width: 920px;
-}
-
-.chapeau{
-    width: 120%;
-}
-
-.guitare{
-    width: 120%;
-}
-
-.avion{
-    width: 120%;
-}
-
-.contacts{
-    width: 120%;
-}
-
-.title{
-    text-align: center;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    padding: 100px;
-}
-
-
-#qui{
-    width: 100%;
-}
-#qui > p{
-    color: white;
-    text-align: justify;
-    font-size: x-large;
-    font-family: 'Bree Serif', serif;
-}
-
-#qui > img{
-    width: 100%;
-}
-
-#quoi{
-    width: 100%;
-    color: white;
-    text-align: justify;
-    font-size: x-large;
-    font-family: 'Bree Serif', serif;
-}
-
-
-
-#quoi > img{
-    width: 100%;
-}
-
-#moi{
-    width: 920px;
-}
-
-#moi > p{
-    color: white;
-    text-align: justify;
-    font-size: larger;
-}
-
-#moi > img{
-    width: 100%;
-    align-content: center;
-}
-
-#moi > iframe{
-    width: 100%;
-}
-
-#moi > p{
-    font-family: 'Bree Serif', serif;
-    font-size: x-large;
-}
-
-.photo{
-    width: 934px;
-    transform: rotate(90deg);
-    justify-self: center;
-    align-self: center;
-}
-#gauche{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 934px;
-    width: 100%;
-    justify-items: center;
-    align-items: center;
-}
-#contact{
-    display: grid;
-    grid-template-columns: repeat(3, 0.3fr);
-    align-content: center;
-}
-
-.fb{
-    width: 306px;
-}
-
-.insta{
-    width: 306px;
-}
-
-.linkedin{
-    width: 306px;
-}
-
-@media (min-width: 1280px){
-    .title {
-        text-align: center;
-        color: white;
-        padding: 40px;
-        }
-        
-        #bandeau {
-            color: white;
-            font-size: 600%;
-            text-shadow: 2px 2px 2px blue ;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            align-content: center;
-            justify-content: center;
-        }
-        
-        body {
-            background-color: black;
-            margin: 30px;
-            
-        }
-        
-        .slogan{
-            font-size: larger;
-        }
-        .text {
-            color: white;
-            font-size: x-large;
-            text-align: justify
-        }
-        
-        .icones{
-            width: 100%;
-            align-items: center;
-            justify-items: center;
-        }
-
-        .chapeau {
-            width: 220px;
-        }
-        
-        .guitare{
-            width: 300px;
-        }
-        
-        .avion{
-            width: 350px;
-        }
-        .contacts{
-            width: 100%;
-            
-            
-        }
-      
-        
-        #qui{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
-        width: 100%;
-        gap: 50px
-        
-        }
-        
-        .afrique {
-            width: 500px;
-        }
-        
-        .sthetoscope{
-            width: 500px;
-        }
-        
-        .profil{
-            width: 100%;
-        }
-        
-        
-        #quoi{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas: "gauche droitetop"
-                                 "gauche droitebot";
-            width: 100%;
-            color: white;
-            font-family: 'Bree Serif', serif;
-            font-size: x-large;
-            
-        }
-         #gauche{
-       grid-area: gauche;
-    }
-         #droitetop{
-        grid-area: droitetop;
-    }
-         #droitebot{
-        grid-area: droitebot;
-    }
-        .photo{
-            width: 100%;
-            
-        }
-        
-        
-        .fb{
-            width: 250px;
-        }
-        
-        .insta{
-            width: 250px;
-        }
-        
-        .linkedin{
-            width: 250px;
-        }
-        
-        #moi{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-            justify-items: center;
-            gap: 30px;
-            width: 100%;
-            
-        }
-
-        #helix{
-            width: 60%;
-        }
-
-        #contact{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            align-items: center;
-            justify-items: center;
-            width: 100%;
-        }
-        
-        .geralt{
-        
-            width: 860px;
-        }
-    .concert{
-        width: 860px;
-    }
-}
-
-
-
-/** Base */
-
-/** Typographie */
-body {
-    font-family: 'Orbitron', sans-serif;
-    line-height: 1.6;
-}
-
-h1,
-h2,
-h3 {
-    text-transform: uppercase;
-    text-align: center;
-    color: ivory;
-
-}
-
-/* Media */
-img {
+img{
     max-width: 100%;
-    
 }
 
 #insitu,
@@ -336,185 +18,41 @@ img {
     border-radius: 50%;
 }
 
+#insitu{
+    max-width: 60%;
+}
+
 iframe{
     max-width: 100%;
 }
 
-/** Layout */
-.container,
-.grid {
-    max-width: 1200px;
-    margin: auto;
-}
-.grid {
-    display: block;
-}
-.section {
-    padding: 4em 0;
-}
+/** Typographie */
 
-/** Block */
-.heading {
-    color: white;
-    text-align:center;
-    font-size: 120%;
-}
-.heading__title {
-    color: white;
-    text-shadow: blue 2px 2px 2px;
-    font-size: 600%;
-    text-transform: uppercase;
-    background-image: url('header.jpg');
-    background-repeat: no-repeat;
-}
- .bg.image{
-     background-image: url('header.jpg');
-     background-repeat: no-repeat;
- }
-
-.resume__item {
-    list-style: none;
-    display: grid;
-}
-
-.resume__date {
-    margin-top: 2em;
-    text-align: right;
-}
-
-.resume__icon {
-    position: relative;
-}
-
-.resume__content {
-    margin-bottom: 4em
-}
-
-.resume__item:not(:last-child) .resume__icon:after {
-
-    content: "";
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    display: block;
-    height: 100%;
-    width: 1px;
-    border-left: 1px dashed #666;
-}
-
-/** Pages */
-.section-about,
-.section-hobby,
-.section-contact {
-    color:#fff;
-    font-size: 150%;
-    font-family: 'Bree', Serif;
-}
-
-.section-resume{
-    color: white;
-    font-size: 130%;
+body {
     font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
 }
 
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: ivory;
+    font-size: xx-large;
+    padding: 1em;
 
-.section-hobby .section__image{
-    order: initial;
-    
 }
 
-
-
-.section-hobby .section__vid{
-    order: initial;
-}
-
-.section-hobby .grid{
-    align-items: center;
-    justify-items: center;
-}
-.section-about .grid {
-    align-items: center;
-}
-.section-about .section__image {
-    order:initial;
-}
-
-#contact{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
-
-#about{
-    display: flex;
-}
-
-#insitu{
-    transform: rotate(90deg);
-    max-width: 40%;
-    margin: 3em;
-}
-
-.page__footer{
+#bandeau{
     color: white;
+    text-align: center;
+    text-shadow: blue 4px 4px 4px;
+    font-size: 600%;
 }
 
-@media screen and (min-width: 940px){
+/** Background */
 
-    .grid{
-        display: grid;
-    }
-
-    .heading{
-        padding: 20px;
-    }
-
-    .heading__description{
-        font-size: 150%;
-    }
-
-    .section-about .grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1em;
-        padding: 10px;
-    }
-    .section-about .section__image {
-        order: initial;
-    }
-
-    .section-hobby .grid{
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1em;
-        padding: 10px;
-    }
-    
-    .section-contact .grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .resume__item {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .resume__icon {
-        justify-self: center;
-        max-width: 80px;
-    }
-
-    .resume__title{
-        color:lightseagreen;
-    }
-
-    .resume__date{
-        color: lightskyblue;
-        font-size: 150%;
-    }
-
-    .page__footer{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
+body{
+    background-color: black;
 }
